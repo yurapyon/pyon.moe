@@ -1,5 +1,6 @@
 import type { Component } from 'solid-js';
 import { SubNav } from "./components/SubNav";
+import { Year } from "./components/works/Year";
 
 const Img: Component = (props) => {
   const url = () => {
@@ -15,10 +16,8 @@ export const Works3d: Component = () => {
   return (
     <div class="flex flex-col gap-4">
       <SubNav />
-      <div class="flex flex-col gap-2">
-        <div class="bg-lmn-slate text-white px-1.5 py-1 shadow-md">
-          2023
-        </div>
+
+      <Year year={2023} >
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
             bite lemons v2; VSeeFace model, character design
@@ -55,12 +54,9 @@ export const Works3d: Component = () => {
           <Img name="dejiko" index="1" />
           <Img name="dejiko" index="2" />
         </div>
-      </div>
+      </Year>
 
-      <div class="flex flex-col gap-2">
-        <div class="bg-lmn-slate text-white px-1.5 py-1 shadow-md">
-          2022
-        </div>
+      <Year year={2022} >
         <div class="bg-lmn-white shadow-md">
           <Img name="girutan" />
         </div>
@@ -69,12 +65,9 @@ export const Works3d: Component = () => {
           <Img name="alice" index="2" />
           <Img name="alice" index="3" />
         </div>
-      </div>
+      </Year>
 
-      <div class="flex flex-col gap-2">
-        <div class="bg-lmn-slate text-white px-1.5 py-1 shadow-md">
-          2017
-        </div>
+      <Year year={2017} >
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
             u7 dratama; music video, character design, Unity
@@ -95,7 +88,7 @@ export const Works3d: Component = () => {
           <Img name="worst" index="1" fileType="jpg" />
           <Img name="worst" index="2" fileType="jpg" />
         </div>
-      </div>
+      </Year>
     </div>
   );
 };

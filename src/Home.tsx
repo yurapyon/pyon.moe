@@ -58,28 +58,7 @@ export const Home: Component = () => {
 
         <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
 
-        {/*
-        <div class="flex flex-row w-full">
-          <div class="font-mono px-1.5 py-1 text-center">
-            links:
-          </div>
-          <A
-            href="/blog"
-            class="font-mono hover:bg-lmn-yellow px-1.5 py-1 text-center w-full"
-          >
-            blog
-          </A>
-        </div>
-
-        <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
-
-        <div class="flex flex-row w-full">
-          <div class="font-mono px-1.5 py-1 text-center">
-            stuff:
-          </div>
-        </div>
-          */}
-         <Nav />
+        <Nav />
 
         <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
 

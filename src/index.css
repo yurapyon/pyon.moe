@@ -24,6 +24,8 @@
   --color-blue-white: #e8e8f8;
   --color-blue-white-mid: #d8d8e8;
   --color-blue-white-shade: #d0d0e0;
+
+  --font-serif: ui-serif, Garamond, serif;
 }
 
 html {
