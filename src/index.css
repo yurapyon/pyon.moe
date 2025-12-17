@@ -1,1 +1,51 @@
 @import 'tailwindcss';
+
+@theme {
+  --breakpoint-xs: 350px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 900px;
+
+  --container-xs: 350px;
+  --container-sm: 600px;
+  --container-md: 900px;
+
+  --shadow-md: 4px 4px #93999d40;
+
+  --color-lmn-slate: #161616;
+  --color-lmn-slate-light: #313131;
+  --color-lmn-blue: #34a3e0;
+  --color-lmn-pink: #f081b7;
+  --color-lmn-yellow: #fedc3e;
+  --color-lmn-green: #4ec67c;
+  --color-lmn-blood: #197cb3;
+  --color-lmn-red: #f1392a;
+  --color-lmn-white: #f3f1f2;
+  --color-lmn-white-shade: #dcdadc;
+  --color-blue-white: #e8e8f8;
+  --color-blue-white-mid: #d8d8e8;
+  --color-blue-white-shade: #d0d0e0;
+}
+
+html {
+  background-color: #b0b0b0;
+  background-image: url("/images/parcelbg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.panel-md {
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  a {
+    text-decoration-line: underline;
+  }
+
+  h1 img,iframe {
+    margin: calc(-1 * --spacing(1)) calc(-1 * --spacing(1.5)) 0;
+    width: calc(100% + --spacing(3));
+    max-width: none;
+  }
+}
