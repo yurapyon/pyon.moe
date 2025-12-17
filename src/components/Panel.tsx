@@ -9,9 +9,9 @@ interface PanelProps {
 
 export const Panel: Component<PanelProps> = (props) => {
   return (
-    <div class="flex flex-col bg-blue-white shadow-md font-serif">
+    <div class="flex flex-col bg-blue-white shadow-md">
       <div class={[
-          "font-semibold w-full px-1.5 py-1",
+          "font-semibold w-full px-1.5 py-1 font-serif",
           props.titleClass || "",
         ].join(" ")}>
         {props.title}
