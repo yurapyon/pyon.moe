@@ -23,7 +23,7 @@ const Layout: ParentComponent = (props) => {
         {props.children}
       </div>
       <div class="mt-2">
-        (c) parcel_ch 2025
+        made with SolidJS (c) parcel_ch 2026
       </div>
     </div>
   );

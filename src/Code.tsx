@@ -7,9 +7,9 @@ Self-taught generalist programmer //
 <a href="https://github.com/yurapyon" target="_blank">github</a> //
 <a href="/resume-11-25.pdf" target="_blank">resume</a>  
 TLDR:  
-- game development / graphics (OpenGL, custom engines, Unity/Godot)
+- game development (Unity/Godot/Love2d, OpenGL, custom engines)
 - web development (Typescript, React, Next.js)
-- low-level, microcontrollers (C, Zig, Rust)
+- low-level, microcontrollers (C, Zig)
 - scripting (Forth, Scheme, Lua)
 - functional programming, algorithms
 `;
@@ -46,11 +46,13 @@ export const Code: Component = () => {
         titleClass="bg-lmn-blue"
         body={overviewBody}
       />
+      {/*
       <Panel
         title="mailgun [WIP]"
         titleClass="bg-lmn-green"
         body={mailgunBody}
       />
+      */}
       <Panel
         title="mini and pyon vPC"
         titleClass="bg-lmn-green"

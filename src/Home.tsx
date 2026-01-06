@@ -24,7 +24,7 @@ export const Home: Component = () => {
           <div class="grow">
             <div class="px-1.5 py-1 hidden sm:inline-block">
               pyon.moe <br />
-              updated 12/16/2025
+              updated 01/05/2026
             </div>
             {/*
                         <div class="h-[150px] text-center inline sm:hidden"
