@@ -30,11 +30,15 @@ i'll do my best
 ];
 
 export const Blog: Component = () => {
+  const getPosts = () => {
+    return posts.toReversed();
+  };
+
   return (
     <div class="flex flex-col gap-4">
       <SubNav />
       <div class="flex flex-col gap-8">
-        <Index each={posts.reverse()}>
+        <Index each={getPosts()}>
           {(item) => {
             return (
               <BlogPost
