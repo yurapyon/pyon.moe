@@ -20,7 +20,7 @@ export const Works3d: Component = () => {
       <Year year={2023} >
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
-            bite lemons v2; VSeeFace model, character design
+            bite lemons v2; VSeeFace model, character design; Blender, Unity
           </div>
           <Img name="lemons2" preview="/works/lemons2/1_prev.png" />
           <iframe
@@ -46,7 +46,7 @@ export const Works3d: Component = () => {
         </div>
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
-            bite lemons v1; VRM/VSeeFace model, character design
+            bite lemons v1; VRM/VSeeFace model, character design; Blender, Unity
           </div>
           <Img name="lemons" />
         </div>
@@ -70,7 +70,7 @@ export const Works3d: Component = () => {
       <Year year={2017} >
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
-            u7 dratama; music video, character design, Unity
+            u7 dratama; music video, character design; Blender, Unity, custom graphics engine
           </div>
           <iframe
               class="w-full aspect-video"
@@ -83,7 +83,7 @@ export const Works3d: Component = () => {
         </div>
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
-            worst compilation: fourth wave; covers, inserts, cds
+            worst compilation: fourth wave; covers, inserts, cds; Blender
           </div>
           <Img name="worst" index="1" fileType="jpg" />
           <Img name="worst" index="2" fileType="jpg" />
