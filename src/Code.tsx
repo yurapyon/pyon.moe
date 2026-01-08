@@ -14,6 +14,13 @@ TLDR:
 - functional programming, algorithms
 `;
 
+const monterraBody = `
+# <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/kqeu6rabJl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+<a href="https://www.monterra.ai" target="_blank">Monterra</a>  
+2D graphics editor, fullstack React/Typescript app  
+(please see resume for more information)  
+`;
+
 const mailgunBody = `
 WIP
 `;
@@ -45,6 +52,11 @@ export const Code: Component = () => {
         title="overview"
         titleClass="bg-lmn-blue"
         body={overviewBody}
+      />
+      <Panel
+        title="Monterra"
+        titleClass="bg-lmn-green"
+        body={monterraBody}
       />
       {/*
       <Panel
