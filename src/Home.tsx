@@ -1,5 +1,6 @@
 import type { Component } from 'solid-js';
 import { Card } from "./components/Card";
+import { Button } from "./components/Button";
 import { Nav, type NavLink } from "./components/Nav";
 import { A } from '@solidjs/router';
 
@@ -24,7 +25,7 @@ export const Home: Component = () => {
           <div class="grow">
             <div class="px-1.5 py-1 hidden sm:inline-block">
               pyon.moe <br />
-              updated 01/08/2026
+              updated 01/10/2026
             </div>
             {/*
                         <div class="h-[150px] text-center inline sm:hidden"
@@ -53,7 +54,7 @@ export const Home: Component = () => {
         <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
 
         <div class="p-2 text-center text-2xl sm:text-4xl font-semibold">
-          PYONDOTMOE&trade; MAIL
+          PYONDOTMOE MAIL
         </div>
 
         <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
@@ -68,10 +69,18 @@ export const Home: Component = () => {
         />
 
         <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
+        <Button
+          class="font-mono hover:font-bold hover:text-white hover:bg-[#1185fe]"
+          text="bsky"
+          href="https://bsky.app/profile/pyon.moe"
+          _target="_blank"
+        />
         {/*
         <LinkRow links={social_links} />
           */}
+        {/*
         <div class="h-8"/>
+          */}
 
         <div class="h-[5px] border-t-[5px] border-lmn-slate"></div>
         <div class="p-2 flex flex-col items-center">
