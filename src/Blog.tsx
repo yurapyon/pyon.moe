@@ -64,7 +64,7 @@ before i used this method, i would always try to use separate geometry to add de
 <br />
 
 i feel like this really leveled up my ability to add detail to models.  
-i used this the lemons model, notably the bandaids on the legs.  
+i used this with the lemons model, notably the bandaids on the legs.  
 ![lemons v2](/works/lemons2/1.png)
 <br />
 
