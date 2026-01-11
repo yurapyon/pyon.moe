@@ -57,7 +57,7 @@ this is what the uvs for the decals look like.
 
 this can make modelling and texturing alot easier.  
 for example, when you're making the texture for the hat, you can worry about the base layer separately from the decals on top.
-youre alot freer to work when you don't have to 'line everything up' in your image editor and can just do it in Blender directly.  
+youre alot freer to work when you don't have to 'line everything up' in your image editor to fit on the model, and can just do it in Blender directly.  
 <br />
 
 before i used this method, i would always try to use separate geometry to add decals. you take the underlying base layer, then make some geometry that follows the edges and faces very closely, and kindof sits "on top" of it... kindof like a bandaid. then you just put your decal on that... but this is a pain to model, a pain to rig and can also lead to z-fighting issues when rendering.  
@@ -92,6 +92,8 @@ idk man
 <br />
 
 theres definetly "setup cost" but it's worth it IMO  
+<br />
+
 anyway thanks for reading  
 ` },
 ];
