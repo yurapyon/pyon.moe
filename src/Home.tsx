@@ -8,9 +8,6 @@ export const Home: Component = () => {
   return (
     <Card>
       <div class="flex flex-col">
-        {
-          /* TODO: change how this works for small screens, just split main div in half */
-        }
         <div class="flex flex-row h-[150px]">
           <div
             class="grow-0 h-full aspect-square flex flex-row place-content-center"
@@ -27,17 +24,7 @@ export const Home: Component = () => {
               pyon.moe <br />
               updated 01/11/2026
             </div>
-            {/*
-                        <div class="h-[150px] text-center inline sm:hidden"
-                            style={{ writingMode: 'sideways-lr' }}
-                        >pyon.moe</div>
-              */}
           </div>
-          {
-            /*
-                    <div class="grow" />
-                    */
-          }
 
           <a
             class="p-[3px] grow-0 h-full aspect-square bg-white group"
@@ -75,12 +62,6 @@ export const Home: Component = () => {
           href="https://bsky.app/profile/pyon.moe"
           _target="_blank"
         />
-        {/*
-        <LinkRow links={social_links} />
-          */}
-        {/*
-        <div class="h-8"/>
-          */}
 
         <div class="h-[5px] border-t-[5px] border-lmn-slate"></div>
         <div class="p-2 flex flex-col items-center">
