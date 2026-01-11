@@ -27,6 +27,73 @@ i'll try to keep this blog updated as the project progresses
 <br />
 i'll do my best  
 ` },
+  {
+    title: "hikerchan",
+    date: new Date("Jan 11 2026"),
+    body:`
+i think im going to try a 2.5d ""metroidvania"" project 👍 by ""metroidvania"" i mostly mean a single boss fight :)
+maybe a few rooms you can walk around. but not too much beyond "a main character" "an enemy" and "an environment".  
+<br />
+
+this is hikerchan.  
+![hikerchan](blog/2026-01/hikerchan/dither.png)
+probably the main character for the game.  
+<br />
+
+one trick i like to use when texturing 3d models is to use 2 UV maps.  
+one is a base layer, the second is for adding decals on top.  
+
+as an example, here is hikerchan's hat, using 2 UVs.  
+![hat detail](blog/2026-01/hikerchan/hat-detail1.png)
+and here it is with the decals turned off.  
+![hat detail](blog/2026-01/hikerchan/hat-detail2.png)
+<br />
+
+this is what the uvs for the hat's base layer look like.  
+![base layer uvs](blog/2026-01/hikerchan/hat-base-uvs.png)
+this is what the uvs for the decals look like.  
+![decal uvs](blog/2026-01/hikerchan/hat-decal-uvs.png)
+<br />
+
+this can make modelling and texturing alot easier.  
+for example, when you're making the texture for the hat, you can worry about the base layer separately from the decals on top.
+youre alot freer to work when you don't have to 'line everything up' in your image editor and can just do it in Blender directly.  
+<br />
+
+before i used this method, i would always try to use separate geometry to add decals. you take the underlying base layer, then make some geometry that follows the edges and faces very closely, and kindof sits "on top" of it... kindof like a bandaid. then you just put your decal on that... but this is a pain to model, a pain to rig and can also lead to z-fighting issues when rendering.  
+<br />
+
+i feel like this really leveled up my ability to add detail to models.  
+i used this the lemons model, notably the bandaids on the legs.  
+![lemons v2](/works/lemons2/1.png)
+<br />
+
+this does mean you will often need custom shaders.  
+here is the material i use in Blender.  
+<a href="blog/2026-01/hikerchan/blender-shader.png" target="_blank">![blender shader](blog/2026-01/hikerchan/blender-shader.png)</a>
+the top part is a basic unshaded material with alpha  
+and then the bottom part is the decals  
+<br />
+
+the shader i use in Godot is still a WIP.  
+thankfully Godot supports having 2 UVs on a mesh, so all you have to do in the shader is just read from them, then composite them together. takes a little work but isn't too hard. maybe i can share it soon.  
+<br />
+
+i got it working in Unity too. something along the lines of:  
+\`\`\`
+struct appdata
+{
+  float4 vertex : Position;
+  float2 uv : TEXCOORD0;
+  float2 uv2 : TEXCOORD1;
+};
+\`\`\`
+idk man  
+<br />
+
+theres definetly "setup cost" but it's worth it IMO  
+anyway thanks for reading  
+` },
 ];
 
 export const Blog: Component = () => {
@@ -37,7 +104,7 @@ export const Blog: Component = () => {
   return (
     <div class="flex flex-col gap-4">
       <SubNav />
-      <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-8 blog-body">
         <Index each={getPosts()}>
           {(item) => {
             return (

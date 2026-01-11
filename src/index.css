@@ -51,3 +51,11 @@ html {
     max-width: none;
   }
 }
+
+.blog-body {
+  pre {
+    background-color: #e8e8e8;
+    padding: --spacing(1) --spacing(1.5);
+    font-size: 0.875rem;
+  }
+}
