@@ -91,7 +91,7 @@ struct appdata
 idk man  
 <br />
 
-theres definetly "setup cost" but it's worth it IMO  
+theres definetly a "setup cost" but it's worth it IMO  
 <br />
 
 anyway thanks for reading  
