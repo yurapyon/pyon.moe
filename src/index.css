@@ -1,11 +1,11 @@
 @import 'tailwindcss';
 
 @theme {
-  --breakpoint-xs: 350px;
+  --breakpoint-xs: 400px;
   --breakpoint-sm: 600px;
   --breakpoint-md: 900px;
 
-  --container-xs: 350px;
+  --container-xs: 400px;
   --container-sm: 600px;
   --container-md: 900px;
 
@@ -54,8 +54,11 @@ html {
 
 .blog-body {
   pre {
+    @apply text-xs px-1.5 py-1 overflow-x-auto border;
     background-color: #e8e8e8;
-    padding: --spacing(1) --spacing(1.5);
-    font-size: 0.875rem;
+    border-color: #d8d8d8;
+    @variant sm {
+      @apply text-sm;
+    }
   }
 }
