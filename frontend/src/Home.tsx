@@ -35,7 +35,9 @@ export const Home: Component = () => {
               <img src="images/QRcode.png" />
             </div>
           </a>
+          {/*
           <div class="grow inline sm:hidden"></div>
+          */}
         </div>
 
         <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>

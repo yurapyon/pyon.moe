@@ -156,7 +156,7 @@ export const Blog: Component = () => {
   return (
     <div class="flex flex-col gap-4">
       <SubNav />
-      <div class="flex flex-col gap-8 blog-body">
+      <div class="flex flex-col gap-8">
         <Index each={getPosts()}>
           {(item) => {
             return (

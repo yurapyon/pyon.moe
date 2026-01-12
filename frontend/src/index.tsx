@@ -23,26 +23,11 @@ const Layout: ParentComponent = (props) => {
         {props.children}
       </div>
       <div class="mt-2">
-        made with SolidJS (c) parcel_ch 2026
+        made with SolidJS (c) pyondotmoe 2026
       </div>
     </div>
   );
 }
-
-const preload = (args) => {
-  const pages = getPages();
-  const page = pages.find((p) => {
-    return p.path === args.location.pathname;
-  });
-
-  if (args.intent === "navigate") {
-    if (!!page.pageTitle) {
-      document.title = "pyon.moe - " + page.pageTitle;
-    } else {
-      document.title = "pyon.moe";
-    }
-  }
-};
 
 render(() => {
   const pages = getPages();
@@ -52,8 +37,14 @@ render(() => {
           {(item) => {
             return <Route
               path={item().path}
-              component={item().rootComponent}
-              preload={preload}
+              component={() => {
+                if (!!item().pageTitle) {
+                  document.title = "pyon.moe - " + item().pageTitle;
+                } else {
+                  document.title = "pyon.moe";
+                }
+                return item().rootComponent;
+              }}
             />
           }}
         </Index>

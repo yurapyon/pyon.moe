@@ -19,7 +19,6 @@ export const BlogPost: Component<BlogPostProps> = (props) => {
     ].join(" ");
   };
 
-
   return (
     <div class="shadow-md bg-white font-sans text-sm sm:text-base">
       <div class="px-1.5 py-1 flex flex-row">
@@ -32,7 +31,7 @@ export const BlogPost: Component<BlogPostProps> = (props) => {
         </div>
       </div>
       <div class="h-[2px] border-t-[2px] border-lmn-slate"></div>
-      <div class="px-1.5 pt-1 pb-2">
+      <div class="px-1.5 pt-1 pb-2 blog-md">
         <Markdown children={props.body} />
       </div>
     </div>

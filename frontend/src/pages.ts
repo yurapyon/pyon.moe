@@ -28,14 +28,14 @@ const pageInfo: Record<Page, PageInfo> = {
     fgColor: "hover:text-lmn-red",
     rootComponent: Blog,
     linkText: "blog",
-    pageTitle: "parcel_ch blog",
+    pageTitle: "blog",
   },
   [Page.CODE]: {
     path: "/code",
     bgColor: "hover:bg-lmn-blue",
     rootComponent: Code,
     linkText: "code",
-    pageTitle: "parcel_ch code",
+    pageTitle: "code",
   },
   [Page.WORKS_3D]: {
     path: "/works_3d",
@@ -43,7 +43,7 @@ const pageInfo: Record<Page, PageInfo> = {
     fgColor: "hover:text-lmn-slate",
     rootComponent: Works3d,
     linkText: "3d art",
-    pageTitle: "parcel_ch 3d art",
+    pageTitle: "3d art",
   },
   [Page.WORKS_2D]: {
     path: "/works_2d",
@@ -51,7 +51,7 @@ const pageInfo: Record<Page, PageInfo> = {
     fgColor: "hover:text-lmn-yellow",
     rootComponent: Works2d,
     linkText: "2d art",
-    pageTitle: "parcel_ch 2d art",
+    pageTitle: "2d art",
   },
 } as const;
 

@@ -52,7 +52,7 @@ html {
   }
 }
 
-.blog-body {
+.blog-md {
   pre {
     @apply text-xs px-1.5 py-1 overflow-x-auto border;
     background-color: #e8e8e8;
