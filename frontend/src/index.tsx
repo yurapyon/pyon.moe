@@ -7,6 +7,7 @@ import type { ParentComponent } from 'solid-js';
 import { Router, Route } from "@solidjs/router";
 import { getPages } from "./pages";
 import { BlogPerma } from "./BlogPerma";
+import { Error404 } from "./404";
 
 const root = document.getElementById('root');
 
@@ -48,7 +49,8 @@ render(() => {
             />
           }}
         </Index>
-        <Route path={"/post/:title"} component={BlogPerma}/>
+        <Route path="/post/:title" component={BlogPerma}/>
+        <Route path="*404" component={Error404}/>
       </Router>
     );
   },
