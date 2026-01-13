@@ -6,7 +6,7 @@ import 'solid-devtools';
 import type { ParentComponent } from 'solid-js';
 import { Router, Route } from "@solidjs/router";
 import { getPages } from "./pages";
-
+import { BlogPerma } from "./BlogPerma";
 
 const root = document.getElementById('root');
 
@@ -48,6 +48,7 @@ render(() => {
             />
           }}
         </Index>
+        <Route path={"/post/:title"} component={BlogPerma}/>
       </Router>
     );
   },
