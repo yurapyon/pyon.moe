@@ -30,6 +30,16 @@ const pageInfo: Record<Page, PageInfo> = {
     linkText: "blog",
     pageTitle: "blog",
   },
+  /*
+  [Page.ABOUT]: {
+    path: "/about",
+    bgColor: "hover:bg-lmn-pink",
+    fgColor: "hover:text-lmn-yellow",
+    rootComponent: Works2d,
+    linkText: "2d art",
+    pageTitle: "2d art",
+  },
+  */
   [Page.CODE]: {
     path: "/code",
     bgColor: "hover:bg-lmn-blue",

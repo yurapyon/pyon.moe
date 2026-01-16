@@ -22,6 +22,7 @@ export const Nav: Component<NavProps> = (props) => {
               item().fgColor ?? "hover:text-white",
               "hover:font-semibold bg-white",
             ].join(" ")}
+            end
           >
             {item().linkText}
           </A>

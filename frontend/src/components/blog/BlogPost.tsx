@@ -21,7 +21,7 @@ export const BlogPost: Component<BlogPostProps> = (props) => {
   };
 
   const permalink = () => {
-    return `/post/${props.title}`;
+    return `/blog/${props.title}`;
   };
 
   return (

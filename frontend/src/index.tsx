@@ -4,10 +4,11 @@ import { render } from 'solid-js/web';
 import 'solid-devtools';
 
 import type { ParentComponent } from 'solid-js';
-import { Router, Route } from "@solidjs/router";
+import { Router, Route, useParams } from "@solidjs/router";
 import { getPages } from "./pages";
-import { BlogPerma } from "./BlogPerma";
+import { Post } from "./Post";
 import { Error404 } from "./404";
+import { posts } from "./posts";
 
 const root = document.getElementById('root');
 
@@ -49,7 +50,17 @@ render(() => {
             />
           }}
         </Index>
-        <Route path="/post/:title" component={BlogPerma}/>
+        <Route
+          path="/blog/:title"
+          component={() => {
+            const params = useParams();
+            document.title = "pyon.moe - blog: " + params.title;
+            return <Post id={params.title} />
+          }}
+          matchFilters={{
+            title: posts.map((post) => post.title),
+          }}
+        />
         <Route path="*404" component={Error404}/>
       </Router>
     );

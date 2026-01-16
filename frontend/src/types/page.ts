@@ -4,5 +4,6 @@ export enum Page {
   CODE,
   WORKS_3D,
   WORKS_2D,
+  ABOUT,
 }
 
