@@ -175,7 +175,6 @@ graphics work on desktop, so would just have to port that over. maybe something 
 i'm not even sure that writing games in forth would be all too accessible or even enjoyable lol but it could be neat...  
 <br />
 lets keep doing our best out there.  
-thanks for reading  
 ` },
 ];
 
