@@ -1,4 +1,4 @@
 pyon.moe homepage
 
 frontend: SolidJS
-backend:  Rust w/ Rocket
+backend:  Rust w/ Rocket (note backend doesnt do anything right now)

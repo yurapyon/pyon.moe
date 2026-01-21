@@ -22,7 +22,7 @@ export const Home: Component = () => {
           <div class="grow">
             <div class="px-1.5 py-1 hidden sm:inline-block">
               pyon.moe <br />
-              updated 01/11/2026
+              updated 01/20/2026
             </div>
           </div>
 

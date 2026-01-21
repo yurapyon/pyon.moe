@@ -61,4 +61,18 @@ html {
       @apply text-sm;
     }
   }
+
+  :not(pre) > code {
+    @apply text-xs px-0.5 border;
+    background-color: #e8e8e8;
+    border-color: #d8d8d8;
+    @variant sm {
+      @apply text-sm;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+    list-style-position: inside;
+  }
 }

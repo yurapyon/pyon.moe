@@ -142,5 +142,40 @@ theres definetly a "setup cost" but it's worth it IMO
 
 anyway thanks for reading  
 ` },
+  {
+    title: "webforth",
+    date: new Date("Jan 20 2026"),
+    body:`
+i spent the last few days getting my Forth implementation,
+<a class="underline" href="https://github.com/yurapyon/mini" target="_blank">mini</a>, to run in the browser.
+you can check it out <a class="underline" href="https://mini-nrlx.onrender.com" target="_blank">here</a>  
+<br />
+as of today, what youll want to do is:  
+1. open the browser console  
+2. click in the black box on the page (that's the "terminal")  
+3. type a command
+<br />
+some commands to try: \`0 256 dump\` \`ashy\` \`words cr\`  
+example output:  
+![example output](/blog/2026-01/webforth/0-256-dump.png)
+<br />
+i'd been thinking for a while about getting mini to run on the web,
+but didn't really want to reimplement the whole library in typescript, or learn how to write webassembly by hand lol.
+so it was really cool and awesome that zig can just compile to it.
+it didn't take too much work to add it to the build script (and it was about time for me to learn more about zig's build system anyway)  
+<br />
+when you map out the technologies used for that demo site, its like this:  
+\`forth - zig - webassembly - js - solid.js\`  
+seems complicated to get everything to talk to eachother, but it's not too bad if you just try and keep the code clean... but it really is some type of FFI wrapper hell  
+<br />
+really don't know where this project will go. being able to call js from forth opens up alot of possibilies.
+one goal for now is seeing if i can build a framework for writing games in forth. ive already done alot of the
+graphics work on desktop, so would just have to port that over. maybe something like love2d to start then something like pico8 down the line...  
+<br />
+i'm not even sure that writing games in forth would be all too accessible or even enjoyable lol but it could be neat...  
+<br />
+lets keep doing our best out there.  
+thanks for reading  
+` },
 ];
 

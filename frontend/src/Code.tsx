@@ -26,9 +26,10 @@ WIP
 
 const miniBody = `
 # ![life](/works/mini/1.png)
-16bit Forth implementation and virtual PC  
+16bit Forth implementation and virtual PC, for desktop and web  
 Zig and Forth  
-<a href="https://github.com/yurapyon/mini" target="_blank">github</a>
+<a href="https://github.com/yurapyon/mini" target="_blank">github</a>  
+[WIP] <a href="https://mini-nrlx.onrender.com" target="_blank">web demo</a>
 `;
 
 const u7Body = `
