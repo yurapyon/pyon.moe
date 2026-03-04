@@ -38,9 +38,11 @@ export const Works3d: Component = () => {
         <div class="bg-lmn-white shadow-md">
           <Img name="lilyhops" />
         </div>
+        {/*
         <div class="bg-lmn-white shadow-md">
           <Img name="mii_bonk" />
         </div>
+          */}
         <div class="bg-lmn-white shadow-md">
           <Img name="alice_umaru" />
         </div>
