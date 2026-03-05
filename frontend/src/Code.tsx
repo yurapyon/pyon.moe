@@ -5,7 +5,7 @@ import { Panel } from "./components/Panel";
 const overviewBody = `
 Self-taught generalist programmer //
 <a href="https://github.com/yurapyon" target="_blank">github</a> //
-<a href="/resume-11-25.pdf" target="_blank">resume</a>  
+<a href="/resume.pdf" target="_blank">resume</a>  
 TLDR:  
 - game development, prebuilt and custom engines
 - fullstack web development w/ React and Typescript
