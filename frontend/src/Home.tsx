@@ -1,17 +1,14 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 import { Card } from "./components/Card";
 import { Button } from "./components/Button";
-import { Nav, type NavLink } from "./components/Nav";
-import { A } from '@solidjs/router';
+import { Nav } from "./components/Nav";
 
 export const Home: Component = () => {
   return (
     <Card>
       <div class="flex flex-col">
         <div class="flex flex-row h-[150px]">
-          <div
-            class="grow-0 h-full aspect-square flex flex-row place-content-center"
-          >
+          <div class="grow-0 h-full aspect-square flex flex-row place-content-center">
             <div class="text-[10rem] leading-[9rem] text-center font-bold">
               P
             </div>
@@ -22,7 +19,7 @@ export const Home: Component = () => {
           <div class="grow">
             <div class="px-1.5 py-1 hidden sm:inline-block">
               pyon.moe <br />
-              updated 01/25/2026
+              updated 03/16/2026
             </div>
           </div>
 
@@ -62,7 +59,7 @@ export const Home: Component = () => {
           class="font-mono hover:font-bold hover:text-white hover:bg-[#1185fe]"
           text="bsky"
           href="https://bsky.app/profile/pyon.moe"
-          _target="_blank"
+          target="_blank"
         />
 
         <div class="h-[5px] border-t-[5px] border-lmn-slate"></div>

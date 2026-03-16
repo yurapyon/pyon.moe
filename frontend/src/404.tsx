@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 import { SubNav } from "./components/SubNav";
 import { PageNotFound } from "./components/PageNotFound";
 

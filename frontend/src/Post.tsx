@@ -1,16 +1,16 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 
 import { SubNav } from "./components/SubNav";
 import { BlogPost } from "./components/blog/BlogPost";
 import { posts } from "./posts";
 
 interface PostProps {
-  id: string
+  id: string;
 }
 
-export const Post: Component = (props) => {
+export const Post: Component<PostProps> = (props) => {
   const getPost = () => {
-    return posts.find((post) => post.title === props.id);
+    return posts.find((post) => post.title === props.id)!;
   };
 
   return (

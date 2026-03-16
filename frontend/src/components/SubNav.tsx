@@ -1,10 +1,9 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 import { Nav } from "./Nav";
 import { Card } from "./Card";
 import { Button } from "./Button";
 
-interface SubNavProps {
-}
+interface SubNavProps {}
 
 export const SubNav: Component<SubNavProps> = (props) => {
   return (
@@ -26,4 +25,3 @@ export const SubNav: Component<SubNavProps> = (props) => {
     </Card>
   );
 };
-

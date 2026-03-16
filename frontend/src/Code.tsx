@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 import { SubNav } from "./components/SubNav";
 import { Panel } from "./components/Panel";
 
@@ -50,16 +50,8 @@ export const Code: Component = () => {
   return (
     <div class="flex flex-col gap-4">
       <SubNav />
-      <Panel
-        title="overview"
-        titleClass="bg-lmn-blue"
-        body={overviewBody}
-      />
-      <Panel
-        title="Monterra"
-        titleClass="bg-lmn-green"
-        body={monterraBody}
-      />
+      <Panel title="overview" titleClass="bg-lmn-blue" body={overviewBody} />
+      <Panel title="Monterra" titleClass="bg-lmn-green" body={monterraBody} />
       {/*
       <Panel
         title="mailgun [WIP]"
@@ -72,11 +64,7 @@ export const Code: Component = () => {
         titleClass="bg-lmn-green"
         body={miniBody}
       />
-      <Panel
-        title="u7 dratama"
-        titleClass="bg-lmn-green"
-        body={u7Body}
-      />
+      <Panel title="u7 dratama" titleClass="bg-lmn-green" body={u7Body} />
       <Panel
         title="Girl Scout Camping SIMULATOR"
         titleClass="bg-lmn-green"

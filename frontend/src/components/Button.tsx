@@ -1,9 +1,11 @@
+import { Component } from "solid-js";
+
 export interface ButtonProps {
   text: string;
   href: string;
   target?: string;
   class?: string;
-  deactivated?: bool;
+  deactivated?: boolean;
 }
 
 export const Button: Component<ButtonProps> = (props) => {

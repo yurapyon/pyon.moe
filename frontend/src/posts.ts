@@ -1,15 +1,18 @@
+import { BlogPostProps } from "./components/blog/BlogPost";
+
 export const posts: BlogPostProps[] = [
   {
     title: "first",
     date: new Date("December 16 2025"),
-    body:`
+    body: `
 thinking to do some type of weekly updates on projects  
 wahoo  
-` },
+`,
+  },
   {
     title: "2026",
     date: new Date("Jan 5 2026"),
-    body:`
+    body: `
 i need to spend more time making art this year  
 i'm always 'waiting for everything to be in order' before i sit down and start working on my own projects  
 <br />
@@ -22,11 +25,12 @@ this week i will try to start on a project to work on for this year
 i'll try to keep this blog updated as the project progresses  
 <br />
 i'll do my best  
-` },
+`,
+  },
   {
     title: "hikerchan",
     date: new Date("Jan 11 2026"),
-    body:`
+    body: `
 i think im going to try a 2.5d ""metroidvania"" project 👍 by ""metroidvania"" i mostly mean a single boss fight :)
 maybe a few rooms you can walk around. but not too much beyond "a main character" "an enemy" and "an environment".  
 <br />
@@ -141,11 +145,12 @@ theres definetly a "setup cost" but it's worth it IMO
 <br />
 
 anyway thanks for reading  
-` },
+`,
+  },
   {
     title: "webforth",
     date: new Date("Jan 20 2026"),
-    body:`
+    body: `
 i spent the last few days getting my Forth implementation,
 <a class="underline" href="https://github.com/yurapyon/mini" target="_blank">mini</a>, to run in the browser.
 you can check it out <a class="underline" href="https://mini-nrlx.onrender.com" target="_blank">here</a>  
@@ -175,6 +180,6 @@ graphics work on desktop, so would just have to port that over. maybe something 
 i'm not even sure that writing games in forth would be all too accessible or even enjoyable lol but it could be neat...  
 <br />
 lets keep doing our best out there.  
-` },
+`,
+  },
 ];
-

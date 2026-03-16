@@ -5,6 +5,8 @@ import { Code } from "./Code";
 import { Blog } from "./Blog";
 import { Works3d } from "./Works3d";
 import { Works2d } from "./Works2d";
+import { Component } from "solid-js";
+import { Loppy } from "./Loppy";
 
 interface PageInfo {
   path: string;
@@ -40,6 +42,13 @@ const pageInfo: Record<Page, PageInfo> = {
     pageTitle: "2d art",
   },
   */
+  [Page.LOPPY]: {
+    path: "/loppy",
+    bgColor: "",
+    rootComponent: Loppy,
+    linkText: "loppy",
+    pageTitle: "loppy",
+  },
   [Page.CODE]: {
     path: "/code",
     bgColor: "hover:bg-lmn-blue",
@@ -66,7 +75,7 @@ const pageInfo: Record<Page, PageInfo> = {
 } as const;
 
 export const getPages = (ignore: Page[] = []) => {
-  const pages = Object.entries(pageInfo).map(([key, value])=>{
+  const pages = Object.entries(pageInfo).map(([key, value]) => {
     const nkey = Number(key);
     if (ignore.includes(nkey)) {
       return null;
@@ -75,5 +84,5 @@ export const getPages = (ignore: Page[] = []) => {
     }
   });
 
-  return pages.filter((p)=>!!p);
-}
+  return pages.filter((p) => !!p);
+};

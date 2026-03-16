@@ -1,14 +1,21 @@
-import type { Component } from 'solid-js';
+import type { Component } from "solid-js";
 import { SubNav } from "./components/SubNav";
 import { Year } from "./components/works/Year";
 
-const Img: Component = (props) => {
+const Img: Component<{
+  name: string;
+  index?: string;
+  fileType?: string;
+  preview?: string;
+}> = (props) => {
   const url = () => {
     return `/works/${props.name}/${props.index || 1}.${props.fileType || "png"}`;
   };
 
   return (
-    <a href={url()} target="_self"><img src={props.preview || url()} /></a>
+    <a href={url()} target="_self">
+      <img src={props.preview || url()} />
+    </a>
   );
 };
 
@@ -17,19 +24,19 @@ export const Works3d: Component = () => {
     <div class="flex flex-col gap-4">
       <SubNav />
 
-      <Year year={2023} >
+      <Year year={2023}>
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
             bite lemons v2; VSeeFace model, character design; Blender, Unity
           </div>
           <Img name="lemons2" preview="/works/lemons2/1_prev.png" />
           <iframe
-              class="w-full aspect-video"
-              src="https://www.youtube-nocookie.com/embed/TM-Wyif_W_0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+            class="w-full aspect-video"
+            src="https://www.youtube-nocookie.com/embed/TM-Wyif_W_0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
           />
         </div>
         <div class="bg-lmn-white shadow-md">
@@ -58,7 +65,7 @@ export const Works3d: Component = () => {
         </div>
       </Year>
 
-      <Year year={2022} >
+      <Year year={2022}>
         <div class="bg-lmn-white shadow-md">
           <Img name="girutan" />
         </div>
@@ -69,18 +76,19 @@ export const Works3d: Component = () => {
         </div>
       </Year>
 
-      <Year year={2017} >
+      <Year year={2017}>
         <div class="bg-lmn-white shadow-md">
           <div class="px-1.5 py-1">
-            u7 dratama; music video, character design; Blender, Unity, custom graphics engine
+            u7 dratama; music video, character design; Blender, Unity, custom
+            graphics engine
           </div>
           <iframe
-              class="w-full aspect-video"
-              src="https://www.youtube.com/embed/loHvrW5EKBk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+            class="w-full aspect-video"
+            src="https://www.youtube.com/embed/loHvrW5EKBk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
           />
         </div>
         <div class="bg-lmn-white shadow-md">

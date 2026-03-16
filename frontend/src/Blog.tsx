@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js';
+import { Index, type Component } from "solid-js";
 import { SubNav } from "./components/SubNav";
 import { BlogPost } from "./components/blog/BlogPost";
 import { posts } from "./posts";
