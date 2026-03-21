@@ -43,11 +43,11 @@ const pageInfo: Record<Page, PageInfo> = {
   },
   */
   [Page.LOPPY]: {
-    path: "/loppy",
+    path: "/pyon3d",
     bgColor: "",
     rootComponent: Loppy,
-    linkText: "loppy",
-    pageTitle: "loppy",
+    linkText: "Pyon3D",
+    pageTitle: "Pyon3D",
   },
   [Page.CODE]: {
     path: "/code",
