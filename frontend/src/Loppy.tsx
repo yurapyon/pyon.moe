@@ -31,6 +31,9 @@ There will also be a Patreon with events and perks and all that
 <br/>
 *When will it be released?*  
 Hopefully an alpha will be available for Patreon members soon
+<br/>  
+*Will it be open source?*  
+Maybe not... but parts of it may be turned into an open-source library and shared
 `;
 
 const AIDisclosure = `
